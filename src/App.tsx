@@ -23,7 +23,7 @@ function App() {
         </p>
       </div>
       <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-      <h1>v0.0.2</h1>
+      <h1>v0.0.3</h1>
     </div>
   );
 }
