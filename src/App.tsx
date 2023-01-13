@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { VITE_ENV } from "./config/env";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +24,7 @@ function App() {
         </p>
       </div>
       <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-      <h1>v0.0.3</h1>
+      <h1>v0.0.3-{VITE_ENV}</h1>
     </div>
   );
 }

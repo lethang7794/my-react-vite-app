@@ -5,14 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:stg": "env-cmd -f .env.stg vite",
+    "dev:prod": "env-cmd -f .env.prod vite",
     "build": "tsc && vite build",
+    "build:stg": "tsc && vite env-cmd -f .env.stg build",
+    "build:prod": "tsc && vite env-cmd -f .env.prod build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
